@@ -90,9 +90,9 @@ export default async function handler(req, res) {
   }
 
   // API Key
-  const apiKey = process.env.AI_API_KEY;
+  const apiKey = process.env.HIDEPULSA_API_KEY;
   if (!apiKey) {
-    console.error('AI_API_KEY environment variable not set');
+    console.error('HIDEPULSA_API_KEY environment variable not set');
     return res.status(500).json({ error: 'Server configuration error' });
   }
 
